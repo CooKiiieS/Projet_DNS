@@ -1,0 +1,16 @@
+;
+; BIND reverse data file for local loopback interface
+;
+$TTL    604800
+@       IN      SOA     laforge.tpdns.lan. laforge.tpdns.lan. (
+                              1         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@       IN      NS      dns.laforge.tpdns.lan.
+dns     IN      A       90.51.56.162
+samuel  IN      A       192.168.1.48
+ipv6    IN      AAAA    ffff:ffff:0000:0000
+tipv6   IN      AAAA    0000:0000:ffff:ffff

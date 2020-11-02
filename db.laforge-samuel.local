@@ -1,0 +1,13 @@
+$TTL 604800;
+@	IN	SOA	server.laforge-samuel.local. root.laforge-samuel.local. (
+		2	; Serial
+		604800	; Refresh
+		86400	; Retry
+		2419200	; Expire
+		604800 )	; Negative Cache TTL
+;
+@	IN	NS	server.laforge-samuel.local.
+server	IN	A	192.168.1.2
+smtp	IN	A	192.168.1.25
+pop	IN	A	192.168.1.35
+imap	IN	A	192.168.1.45

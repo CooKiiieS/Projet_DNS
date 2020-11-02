@@ -1,0 +1,24 @@
+//
+// Do any local configuration here
+//
+
+zone "laforge-samuel.local" {
+     type master;
+     file "/etc/bind/db.laforge-samuel.local";
+};
+
+zone "1.168.192.in-addr.arpa" {
+     type master;
+     notify no;
+     file "/etc/bind/db.192.168.1";
+};
+
+zone "laforge.tpdns.lan" {
+     type master;
+     file "/etc/bind/db.194.199.227.110";
+};
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
